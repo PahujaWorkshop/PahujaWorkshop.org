@@ -1,0 +1,37 @@
+{
+"data" :
+{
+	"Haryana" : 
+	{
+		"Ambala" : "",
+		"Kurukshetra" : "",
+		"Karnal" : 
+		{
+			"Nilokheri" : "",
+			"Taraori" :
+			{
+				"Main Bazaar" :
+				[
+				{
+					"number" : "1",
+					"name" : "Pahuja Light House",
+					"owner" : "Sh. Atam Parkash & Sh. Raj Kumar",
+					"category" : "Repair",
+					"contact" :	"9896411955"
+				}
+				],
+				"Bansal Market" : "",
+				"Punjabi Market" : "",
+				"Auto Market" : "",
+				"Bhagat Singh Market" : ""
+			},
+			"Gharonda" : "",
+			"Asandh":""
+		},
+		"Panipat" : "",
+		"Sonipat" : "",
+		"Gurgaon" : "",
+		"Faridabad" : ""
+		}
+	}
+}

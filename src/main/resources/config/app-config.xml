@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="explore" class="rnd.service.rest.API" scope="prototype">
+		<property name="version" value="1.0" />
+		<property name="baseURL" value="explore" />
+	</bean>
+
+	<bean id="view" class="rnd.service.rest.API" scope="prototype">
+		<property name="version" value="1.0" />
+		<property name="baseURL" value="explore" />
+		<property name="resource" value="mandi" />
+	</bean>
+
+	<bean id="explorer" class="biz.ecom.mandi.Explorer" />
+	<bean id="viewer" class="biz.ecom.mandi.Viewer" />
+
+	<bean class="rnd.data.process.DataProcessorFactory">
+		<property name="registry">
+			<map>
+				<entry key-ref="explore" value-ref="explorer" />
+				<entry key-ref="view" value-ref="viewer" />
+			</map>
+		</property>
+	</bean>
+
+</beans>

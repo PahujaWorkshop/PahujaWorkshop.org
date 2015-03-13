@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pahuja">
+<head>
+
+<title>Pahuja Workshop</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="/">
+<!-- <base href="/Pahuja/"> -->
+
+<link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+<!-- <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap-responsive.css"> -->
+
+<!-- <link rel="stylesheet" href="./lib/angular/ui/angular-ui.css"> -->
+
+<link rel="stylesheet" href="./app/www/css/app.css">
+<link rel="stylesheet" href="./app/www/css/bootstrap-override.css">
+
+<link rel="icon" type="image/png" href="./app/www/rsrc/icon-c.png">
+
+<script src="./lib/jquery/jquery.js"></script>
+<!-- 
+<script src="./lib/bootstrap/js/bootstrap-transition.js"></script>
+<script src="./lib/bootstrap/js/bootstrap-alert.js"></script>
+<script src="./lib/bootstrap/js/bootstrap-modal.js"></script>
+<script src="./lib/bootstrap/js/bootstrap-dropdown.js"></script>
+<script src="./lib/bootstrap/js/bootstrap-scrollspy.js"></script>
+<script src="./lib/bootstrap/js/bootstrap-tab.js"></script>
+<script src="./lib/bootstrap/js/bootstrap-tooltip.js"></script>
+<script src="./lib/bootstrap/js/bootstrap-popover.js"></script>
+<script src="./lib/bootstrap/js/bootstrap-button.js"></script>
+<script src="./lib/bootstrap/js/bootstrap-collapse.js"></script>
+<script src="./lib/bootstrap/js/bootstrap-carousel.js"></script>
+<script src="./lib/bootstrap/js/bootstrap-typeahead.js"></script>
+<script src="./lib/bootstrap/js/bootstrap-affix.js"></script>
+-->
+
+<script src="./lib/angular/angular.js"></script>
+<script src="./lib/angular/angular-route.js"></script>
+<script src="./lib/angular/angular-resource.js"></script>
+
+<!-- <script src="./lib/angular/ui/angular-ui.js"></script> -->
+
+<!--
+<script src="./lib/angular/ui/bootstrap/ui-bootstrap-0.5.0.js"></script>
+<script src="./lib/angular/ui/bootstrap/ui-bootstrap-tpls-0.5.0.js"></script>
+-->
+
+<script src="./lib/spa/js/spa.js"></script>
+<script src="./app/www/js/controller.js"></script>
+<script src="./app/www/js/app.js"></script>
+
+</head>
+
+<body>
+
+	<div>
+		<div ng-include src='"app/www/template/header.html"' class="navbar-fixed-top"></div>
+
+		<div ng-include src='"app/www/template/menu.html"'></div>
+		<div ng-include src='"app/www/template/submenu.html"'></div>
+
+		<div ng-include src='"app/www/template/header-placeorder.html"'></div>
+
+		<div>
+			<div ng-view></div>
+		</div>
+		<div ng-include src='"app/www/template/footer-placeorder.html"'></div>
+		<div ng-include src='"app/www/template/footer.html"' class="navbar-fixed-bottom"></div>
+	</div>
+
+</body>
+</html>

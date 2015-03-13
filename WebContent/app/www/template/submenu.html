@@ -1,0 +1,22 @@
+<hr style="margin-top: 0px">
+
+<div style="background-color: gray; color: white;">
+
+	<div style="margin-left: 20px">
+
+		<div ng-switch on="service">
+			<div ng-switch-default></div>
+			<div ng-switch-when="coaching">
+				<ng-include src='"app/www/template/service/coaching/menu.html"'> </ng-include>
+			</div>
+			<div ng-switch-when="training">
+				<ng-include src='"app/www/template/service/training/menu.html"'> </ng-include>
+			</div>
+			<div ng-switch-when="consulting">
+				<ng-include src='"app/www/template/service/consulting/menu.html"'> </ng-include>
+			</div>
+		</div>
+
+	</div>
+
+</div>
